@@ -90,12 +90,12 @@ st.markdown("""
 
 # Use st.secrets for secure API key management, falling back to environment variables.
 try:
-    groq_api_key = st.secrets["GROQ_API_KEY"]   # Streamlit Cloud secrets
+    groq_api_key = st.secrets["GEMINI_API_KEY"]   # Streamlit Cloud secrets
 except KeyError:
-    groq_api_key = os.getenv("GROQ_API_KEY")    # Local .env fallback
+    groq_api_key = os.getenv("GEMINI_API_KEY")    # Local .env fallback
 
 if not groq_api_key:
-    st.error("⚠️ Missing GROQ_API_KEY. Please set it in your environment variables or in .streamlit/secrets.toml")
+    st.error("⚠️ Missing GEMINI_API_KEY. Please set it in your environment variables or in .streamlit/secrets.toml")
     st.stop()
 
 # Configure the Generative AI model
