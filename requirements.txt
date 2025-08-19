@@ -1,0 +1,21 @@
+# Core app framework
+streamlit>=1.35.0
+python-dotenv>=1.0.1
+
+# Google Gemini API client
+google-generativeai>=0.7.0
+
+# LangChain community integrations
+langchain>=0.2.0
+langchain-community>=0.2.0
+
+# Embeddings
+sentence-transformers>=2.7.0
+
+# Vector store
+faiss-cpu>=1.7.4
+
+# Optional: if you ever use torch (needed for sentence-transformers)
+torch>=2.2.0
+
+
