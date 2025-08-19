@@ -94,7 +94,7 @@ try:
 except KeyError:
     gemini_api_key = os.getenv("GEMINI_API_KEY")    # Local .env fallback
 
-if not groq_api_key:
+if not gemini_api_key:
     st.error("⚠️ Missing GEMINI_API_KEY. Please set it in your environment variables or in .streamlit/secrets.toml")
     st.stop()
 
